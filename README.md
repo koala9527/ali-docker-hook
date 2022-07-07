@@ -5,9 +5,9 @@
 接收镜像服务自动构建后的触发器消息，处理阿里云自动打包镜像完成后通过触发器发送的tag信息，从而执行shell命令更新docker-compose 文件镜像tag名称，拉取镜像更新服务
 
 
-注意要使用`chmod +x update.sh`给予执行权限
+注意要使用`chmod +x update.sh`给予执行权限，update.sh放在需要更新的项目根目录下，与docker-compose.yml同级。
 
-后期可以加上消息推送
+后期可以加上消息推送，docker-compose up 完成之后通知开发者
 
 
 ## 阿里云镜像服务触发器配置：
